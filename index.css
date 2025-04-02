@@ -1,0 +1,159 @@
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    
+}
+
+.header {
+    background-color: #6943FF;
+    color: #FFFFFF; 
+    padding: 30px 20px 1px;
+    margin: 0;
+}
+
+#error {
+    color: darkred
+}
+
+#num-input {
+    min-width: 120px;
+    min-height: 85px;
+    field-sizing: content;
+    border: 2px solid #B295FF;
+    border-radius: 5px;
+    background-color: inherit;
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px
+}
+
+.container {
+    background-color: lavender;
+    padding: 10px; 
+}
+
+.convert {
+    background-color: #FFFFFF;
+    color: #353535;
+    margin: 20px;
+    padding: 10px;
+}
+
+body.dark-mode .convert {
+    background-color: #273549;
+    color: #FFFFFF;
+}
+
+body.dark-mode .container {
+    background-color: #1F2937;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+h2 {
+    color: #5A537B;
+}
+
+body.dark-mode h2 {
+    color: #CCC1FF
+}
+
+#convert-btn {
+    background: #FFFFFF;
+    color: 3D3D3D;
+    width: 120px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px;
+    display: block;
+    margin: 50px auto;
+}
+
+#convert-btn:hover {
+    background-color: bisque;
+    text-shadow: 0 0 5px white;
+}
+
+.switch {
+    position: absolute;
+    top: 10px;
+    right: 35px;
+    width: 50px;
+    height: 25px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 25px;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #273549; /* Green color when active */
+}
+
+input:checked + .slider:before {
+    transform: translateX(25px);
+}
+
+
+.theme-label {
+    font-size: 16px;
+    margin-left: 10px;
+    color: #353535; 
+    font-weight: bold;
+    vertical-align: middle;
+    position: absolute;
+    top: 14px; 
+    right: 10px;
+}
+
+.light-mode {
+    right: 90px;
+}
+
+body.dark-mode #theme-label {
+    color: white;
+}
+
+input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+}
+
+.num-input:focus {
+    box-shadow: 0 0 10px #B295FF;
+}
+
