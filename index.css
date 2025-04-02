@@ -52,7 +52,7 @@ body.dark-mode .convert {
 body.dark-mode .container {
     background-color: #1F2937;
     color: #FFFFFF;
-    transition: 0.3s;
+    transition: 0.1s;
 }
 
 h2 {
@@ -103,7 +103,7 @@ body.dark-mode h2 {
     right: 0;
     bottom: 0;
     background-color: #ccc;
-    transition: 0.4s;
+    transition: 0.2s;
     border-radius: 25px;
 }
 
@@ -115,7 +115,7 @@ body.dark-mode h2 {
     left: 4px;
     bottom: 3px;
     background-color: white;
-    transition: 0.4s;
+    transition: 0.2s;
     border-radius: 50%;
 }
 
