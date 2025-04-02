@@ -56,3 +56,9 @@ themeToggle.addEventListener("change", function() {
         document.body.classList.remove("dark-mode")
     }
 })
+
+document.addEventListener("wheel", function(event) {
+    if (document.activeElement.type === "number") {
+        event.preventDefault();
+    }
+}, { passive: false });
