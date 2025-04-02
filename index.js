@@ -1,4 +1,3 @@
-
 const meterToFeet = 3.281
 const literToGallon = 0.264
 const kilogramToPound = 2.204
